@@ -2,6 +2,16 @@
 
 describe('Assertions', () => {
 
+    it('Exists and Visible 2',() =>{
+        cy.visit("https://vardhantesting84.github.io/TestMartNew/")
+
+        //cy.get("input#session_id").should('exist');
+
+        cy.get("input#session_id").should('be.visible');
+
+
+    })
+
     // it('Elementy Existence and Visibility',()=>{
     //     cy.visit("https://practice.bpbonline.com/")
 
@@ -44,16 +54,16 @@ describe('Assertions', () => {
 
     // })
 
-    it('Attribute Visibility', () => {
-        cy.visit("https://testautomationpractice.blogspot.com/")
+    // it('Attribute Visibility', () => {
+    //     cy.visit("https://testautomationpractice.blogspot.com/")
 
 
-        cy.get("input#name").should('be.visible');
+    //     cy.get("input#name").should('be.visible');
 
-        cy.get("input#name").should('have.attr','placeholder')
+    //     cy.get("input#name").should('have.attr','placeholder')
 
-        cy.get("input#name").should('have.attr','placeholder','Enter Name')
-    })
+    //     cy.get("input#name").should('have.attr','placeholder','Enter Name')
+    // })
 
     // it('Attribute Visibility', () => {
     //     cy.visit("https://testautomationpractice.blogspot.com/")
@@ -82,17 +92,19 @@ describe('Assertions', () => {
         
 //     })
 
-       it('Expect Assertions', () => {
-        cy.visit("https://practice.bpbonline.com/")
+    //    it('Expect Assertions', () => {
+    //     cy.visit("https://practice.bpbonline.com/")
 
-        cy.get('h1').should(($ele) => {
+    //     cy.get('h1').should(($ele) => {
 
-            expect($ele.text()).to.eq("Welcome to BPB Online")
-            expect($ele).to.be.visible
+    //         expect($ele.text()).to.eq("Welcome to BPB Online")
+    //         expect($ele).to.be.visible
             
-        })
+    //     })
         
         
-    })
+    // })
+
+           
 
 })
